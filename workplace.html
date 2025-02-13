@@ -479,22 +479,188 @@
     </footer>
 
     <!-- AI聊天按钮 -->
-    <button id="chat-toggle" class="chat-toggle" type="button">
-        <span class="chat-icon">💬</span>
+    <button id="chat-toggle" class="chat-toggle pulse" type="button" aria-label="打开AI助手">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path fill="#fff" d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.38-1 1.72V7h2a2 2 0 0 1 2 2v2.28c.6.34 1 .98 1 1.72a2 2 0 0 1-2 2c-.74 0-1.38-.4-1.72-1H12v3h1.28c.34-.6.98-1 1.72-1a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-1.72-1H11a2 2 0 0 1-2-2v-3H7.72A1.993 1.993 0 0 1 6 15a2 2 0 0 1-2-2c0-.74.4-1.38 1-1.72V9a2 2 0 0 1 2-2h2V5.72c-.6-.34-1-.98-1-1.72a2 2 0 0 1 2-2m0 2a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1M7 9a1 1 0 0 0-1 1v2h2v-2a1 1 0 0 0-1-1m10 0a1 1 0 0 0-1 1v2h2v-2a1 1 0 0 0-1-1m-5 8a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1z"/>
+        </svg>
     </button>
 
     <!-- AI聊天窗口 -->
     <div id="chat-container" class="chat-container hidden">
         <div class="chat-header">
-            <h3>智能助手</h3>
-            <button class="close-chat">×</button>
+            <div class="chat-header-info">
+                <h3>AI助手</h3>
+            </div>
+            <div class="chat-controls">
+                <button class="close-chat" aria-label="关闭">
+                    <svg viewBox="0 0 1024 1024" width="18" height="18">
+                        <path fill="#fff" d="M512 421.653333L267.946667 177.706667a63.893333 63.893333 0 0 0-90.346667 90.346666L421.653333 512 177.706667 756.053333a63.893333 63.893333 0 0 0 90.346666 90.346667L512 602.346667l244.053333 244.053333a63.893333 63.893333 0 0 0 90.346667-90.346667L602.346667 512l244.053333-244.053333a63.893333 63.893333 0 0 0-90.346667-90.346667L512 421.653333z"/>
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div class="chat-messages"></div>
+        
+        <div class="chat-messages">
+            <div class="message ai-message">
+                <div class="message-bubble">
+                    <p>你好！我是CHEN的AI助手。请问有什么可以帮您？</p>
+                    <div class="quick-replies">
+                        <button class="quick-reply-btn">查看简历重点</button>
+                        <button class="quick-reply-btn">专业技能详情</button>
+                        <button class="quick-reply-btn">联系方式</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="chat-input-area">
-            <textarea placeholder="输入消息..." class="chat-input"></textarea>
-            <button class="send-message">发送</button>
+            <div class="input-wrapper">
+                <textarea 
+                    placeholder="输入你的问题..." 
+                    class="chat-input"
+                    rows="1"
+                    aria-label="聊天输入框"
+                ></textarea>
+                <button class="send-message" aria-label="发送消息">
+                    <svg viewBox="0 0 24 24" width="20" height="20">
+                        <path fill="#4F5456" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
+
+    <style>
+    /* 聊天窗口样式 */
+    .chat-container {
+        position: fixed;
+        bottom: 80px;
+        right: 20px;
+        width: 320px;
+        height: 450px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    /* 头部样式 */
+    .chat-header {
+        background: #2c3e50;  /* 更深的蓝灰色 */
+        padding: 12px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chat-header h3 {
+        color: #fff;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    /* 消息区域样式 */
+    .chat-messages {
+        flex: 1;
+        padding: 16px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #f8f9fa;  /* 更柔和的背景色 */
+    }
+
+    .message-bubble {
+        background: #fff;
+        padding: 12px;
+        border-radius: 12px;
+        max-width: 85%;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .message-bubble p {
+        margin: 0 0 12px 0;
+        color: #2c3e50;  /* 更深的文字颜色 */
+    }
+
+    /* 快速回复按钮样式 */
+    .quick-replies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .quick-reply-btn {
+        background: #e9ecef;  /* 更柔和的按钮背景色 */
+        border: none;
+        padding: 8px 12px;
+        border-radius: 16px;
+        color: #2c3e50;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .quick-reply-btn:hover {
+        background: #dee2e6;
+        transform: translateY(-1px);
+    }
+
+    /* 输入区域样式 */
+    .chat-input-area {
+        padding: 16px;
+        background: #fff;
+        border-top: 1px solid #e9ecef;
+    }
+
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+        background: #f8f9fa;
+        border-radius: 20px;
+        padding: 8px 12px;
+        border: 1px solid #e9ecef;
+    }
+
+    .chat-input {
+        flex: 1;
+        border: none;
+        background: transparent;
+        padding: 0;
+        margin-right: 8px;
+        resize: none;
+        max-height: 80px;
+        font-size: 14px;
+        color: #2c3e50;
+    }
+
+    .chat-input::placeholder {
+        color: #6c757d;  /* 更柔和的占位符颜色 */
+    }
+
+    .chat-input:focus {
+        outline: none;
+    }
+
+    .send-message {
+        background: transparent;
+        border: none;
+        padding: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .send-message svg path {
+        fill: #2c3e50;  /* 统一的图标颜色 */
+    }
+
+    .send-message:hover svg path {
+        fill: #1a252f;  /* 更深的悬停颜色 */
+    }
+    </style>
 
     <script src="script.js"></script>
 </body>
