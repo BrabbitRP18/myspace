@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEN的个人网站 | Professional Style</title>
+    <link rel="stylesheet" href="workplace-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">CHEN的个人网站</div>
+            <div class="nav-links">
+                <a href="#education">教育背景</a>
+                <a href="#experience">实践经历</a>
+                <a href="#research">研究成果</a>
+                <a href="#skills">专业技能</a>
+                <a href="#value">职业价值</a>
+                <div class="contact-dropdown">
+                    <a href="#" class="contact-trigger">Contact</a>
+                    <div class="contact-dropdown-content">
+                        <div class="contact-item">
+                            <img src="./icons/wechat.svg" alt="WeChat">
+                            <div class="contact-text">
+                                <h4>WeChat</h4>
+                                <p>OSBBQA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <img src="./icons/phone.svg" alt="Phone">
+                            <div class="contact-text">
+                                <h4>Tel</h4>
+                                <p>15897675306</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <img src="./icons/email.svg" alt="Email">
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>2096014021@qq.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页首屏 -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="eco-lines"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="left-content">
+                <div class="profile-photo">
+                    <img src="./images/证件照.jpg" alt="CHEN">
+                </div>
+                <div class="dynamic-labels">
+                    <span class="label">双碳行动者</span>
+                    <span class="label">EHS实践者</span>
+                </div>
+            </div>
+            <div class="right-content">
+                <h1 class="name">何晨</h1>
+                <p class="job-title">EHS管理 | 碳足迹分析 | 环境安全守护者</p>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i class="icon location"></i>
+                        <span>24岁 | 硕士在读 | 可入职时间：2025年6月</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="icon certificate"></i>
+                        <span>云南大学 | 国际河流与生态安全研究院 |资源与环境</span>
+                    </div>
+                    <div class="info-card">
+                        <i class="icon language"></i>
+                        <span>LCA碳足迹分析 | 多场景AI模型应用 |环境监测技术</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育背景部分 -->
+    <section id="education" class="education-section">
+        <div class="section-header">
+            <h2>教育背景</h2>
+            <div class="tags">
+                <span class="tag">#环境前沿研究</span>
+                <span class="tag">#专业TOP1</span>
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="time-period">2022-2025</div>
+                <div class="institution">
+                    <h3>云南大学</h3>
+                    <p class="degree">资源与环境硕士</p>
+                    <div class="achievements">
+                        <span class="badge">初试第一录取</span>
+                        <button class="expand-btn" data-content="transcript">
+                            查看成绩单
+                        </button>
+                    </div>
+                    <div class="keywords">
+                        <span>环境规划与管理</span>
+                        <span>GIS空间分析</span>
+                        <span>R语言数据分析</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="time-period">2018-2022</div>
+                <div class="institution">
+                    <h3>湖北工业大学</h3>
+                    <p class="degree">环境生态工程本科（排名前10%）</p>
+                    <div class="course-bubbles">
+                        <span class="bubble" data-score="95">环境监测技术</span>
+                        <span class="bubble" data-score="92">清洁生产原理</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作经历部分 -->
+    <section id="experience" class="experience-section">
+        <div class="section-header">
+            <h2>工作与实习经历</h2>
+            <div class="tags">
+                <span class="tag">#碳资产管理实战</span>
+                <span class="tag">#EHS体系构建</span>
+            </div>
+        </div>
+        <div class="radar-chart">
+            <!-- 岗位能力雷达图将通过JS生成 -->
+        </div>
+        <div class="experience-grid">
+            <div class="experience-category">
+                <h3>核心经历（双碳岗）</h3>
+                <div class="experience-card">
+                    <div class="company-info">
+                        <h4>杭州万泰认证</h4>
+                        <span class="position">双碳实习生</span>
+                    </div>
+                    <ul class="achievements-list">
+                        <li>独立完成多个欧盟CBAM项目技术服务</li>
+                        <li>掌握Gabi碳足迹模型 | SimaPro生命周期分析</li>
+                        <li>参与ISO14067、ISO14064认证执行手册编制</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-category">
+                <h3>其他经历</h3>
+                <div class="experience-card">
+                    <div class="company-info">
+                        <h4>第七届世界军人运动会</h4>
+                        <span class="position">开幕式演员</span>
+                        <span class="time">2019.10</span>
+                    </div>
+                    <ul class="achievements-list">
+                        <li>参与大型团体表演节目</li>
+                        <li>配合完成为期3个月的日常排练工作</li>
+                        <li>圆满完成开幕式正式演出任务</li>
+                    </ul>
+                    <div class="experience-media">
+                        <div class="media-preview" data-type="image">
+                            <img src="./images/military-games.jpg" alt="军运会开幕式表演" class="preview-thumbnail">
+                            <span class="media-tag">演出剪影</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 其他经历类别... -->
+        </div>
+    </section>
+
+    <!-- 研究经历部分 -->
+    <section id="research" class="research-section">
+        <div class="section-header">
+            <h2>研究经历</h2>
+            <div class="tags">
+                <span class="tag">#国家级课题</span>
+                <span class="tag">#生态安全前沿</span>
+            </div>
+        </div>
+        <div class="research-content">
+            <div class="research-project">
+                <h3>云南高原山地入侵性橘小实蝇的源汇分布格局与过程</h3>
+                <div class="project-meta">
+                    <span class="meta-item"><i class="icon institution"></i>云南大学国际河流与生态安全研究院</span>
+                    <span class="meta-item"><i class="icon time"></i>2022.09 - 2024.08</span>
+                    <span class="meta-item"><i class="icon location"></i>昆明</span>
+                    <span class="meta-badge">国家自然科学基金项目</span>
+                </div>
+                <div class="project-content">
+                    <p>负责橘小实蝇的点位及样品收集，以及样本预处理工作。</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">野外采样</span>
+                        <span class="skill-tag">样本预处理</span>
+                        <span class="skill-tag">数据分析</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="research-project">
+                <h3>斑马鱼食源性肠炎模型及其免疫细胞成像分析方法的建立</h3>
+                <div class="project-meta">
+                    <span class="meta-item"><i class="icon institution"></i>中科院水生生物研究所</span>
+                    <span class="meta-item"><i class="icon time"></i>2021.06 - 2021.07</span>
+                    <span class="meta-item"><i class="icon location"></i>武汉</span>
+                </div>
+                <div class="project-content">
+                    <p>负责实验所用斑马鱼的喂养以及实验DNA测序样本的处理和准备</p>
+                    <div class="project-skills">
+                        <span class="skill-tag">DNA测序</span>
+                        <span class="skill-tag">实验动物管理</span>
+                        <span class="skill-tag">样本处理</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 专业技能部分 -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <h2>专业技能</h2>
+            <div class="tags">
+                <span class="tag">#双碳工具流</span>
+                <span class="tag">#EHS管理链</span>
+                <span class="tag">#AI技术应用</span>
+            </div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>AI技术能力</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <h4>多场景AI应用</h4>
+                        <div class="skill-details">
+                            <span>网站开发：自动化代码生成、智能交互设计</span>
+                            <span>AI绘画：Stable Diffusion/Midjourney模型调优</span>
+                            <span>AI写作：deepseek系列模型微调与内容生成</span>
+                        </div>
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>技术框架</h4>
+                        <div class="skill-details">
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                            <span>Hugging Face</span>
+                            <span>AutoML</span>
+                        </div>
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>解决方案设计</h4>
+                        <div class="skill-details">
+                            <span>跨领域AI解决方案设计</span>
+                            <span>模型能力快速业务转化</span>
+                        </div>
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>碳管理工具链</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <h4>碳核算</h4>
+                        <div class="skill-details">
+                            <span>ISO14064\14067标准实施</span>
+                            <span>Gabi数据库应用</span>
+                            <span>CBAM报告填写</span>
+                        </div>
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>分析建模</h4>
+                        <div class="skill-details">
+                            <span>SimaPro生命周期清单分析</span>
+                            <span>Ecoinvent数据库应用</span>
+                            <span>R语言统计分析</span>
+                            <span>LCA碳足迹分析</span>
+                        </div>
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="tool-demo">
+                    <img src="./images/simapro-demo.png" alt="SimaPro LCA分析界面" class="tool-screenshot">
+                    <div class="tool-caption">
+                        <span>SimaPro生命周期清单分析与Ecoinvent数据库应用</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>EHS核心技能</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <h4>环境管理</h4>
+                        <div class="skill-details">
+                            <span>环境监测技术</span>
+                            <span>14001\14000环境管理体系构建</span>
+                            <div class="thumbnail-preview" data-video="monitoring.mp4"></div>
+                        </div>
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>安全管理</h4>
+                        <div class="skill-details">
+                            <span>企业安全标准化建设流程</span>
+                            <span>应急响应预案设计</span>
+
+                        </div>
+                        <div class="progress-bar" data-progress="75"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category other-skills">
+                <h3>其他技能</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <h4>语言与证书</h4>
+                        <div class="skill-details">
+                            <span>CET-6英语</span>
+                            <span>普通话二乙</span>
+                            <span>C1驾驶证</span>
+                        </div>
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>创意技能</h4>
+                        <div class="skill-details">
+                            <span>音乐制作</span>
+                            <span>摄影创作</span>
+                        </div>
+                        <div class="progress-bar" data-progress="80"></div>
+                    </div>
+                    <div class="skill-showcase">
+                        <div class="showcase-grid">
+                            <div class="showcase-item">
+                                <img src="./images/music-production.jpg" alt="音乐制作" class="showcase-thumbnail">
+                                <span class="showcase-label">音乐作品</span>
+                            </div>
+                            <div class="showcase-item">
+                                <img src="./images/photography.png" alt="摄影作品" class="showcase-thumbnail">
+                                <span class="showcase-label">摄影作品</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="software-showcase">
+                <div class="software-slider">
+                    <div class="slider-item active">
+                        <img src="./images/website.png" alt="Street Style" class="slider-image">
+                        <div class="slider-caption">
+                            <h4>「STREET × STYLE」</h4>
+                            <p>结合AI网站作品展示</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="./images/fl-studio.jpg" alt="FL Studio" class="slider-image">
+                        <div class="slider-caption">
+                            <h4>「音乐制作」</h4>
+                            <p>FL Studio 音乐创作界面</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-dot active" data-slide="1"></button>
+                    <button class="slider-dot" data-slide="2"></button>
+                    <button class="slider-dot" data-slide="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 职业价值主张部分 -->
+    <section id="value" class="value-section">
+        <div class="section-header">
+            <h2>职业价值主张</h2>
+            <div class="tags">
+                <span class="tag">#新生代环保力量</span>
+                <span class="tag">#跨领域创新者</span>
+            </div>
+        </div>
+        
+        <div class="value-content">
+            <div class="value-card professional-value">
+                <h3>专业价值观</h3>
+                <div class="quote-box">
+                    <p>"坚信EHS管理是企业可持续发展的基因锁，通过全生命周期碳管理推动产业绿色转型"</p>
+                </div>
+            </div>
+            
+            <div class="value-card advantages">
+                <h3>差异化优势</h3>
+                <div class="advantage-items">
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <img src="./icons/eco-lines.svg" alt="复合思维" class="icon-svg">
+                        </div>
+                        <div class="advantage-content">
+                            <h4>复合思维</h4>
+                            <p>环境科学背景 × 碳市场政策敏感性</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">
+                            <img src="./icons/AIGC.svg" alt="创新执行" class="icon-svg">
+                        </div>
+                        <div class="advantage-content">
+                            <h4>创新执行</h4>
+                            <p>持续跟踪AIGC前沿技术，建立技术选型-落地-迭代的全周期实施能力</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="value-card commitment">
+                <h3>发展承诺</h3>
+                <div class="timeline-goals">
+                    <div class="goal">
+                        <span class="year">2年内</span>
+                        <p>成为双碳领域认证专家</p>
+                    </div>
+                    <div class="goal">
+                        <span class="year">5年内</span>
+                        <p>构建企业级环境安全智能管理系统</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="multimedia-section">
+                <div class="video-intro">
+                    <h3>自我介绍视频</h3>
+                    <div class="language-toggle">
+                        <button class="active" data-lang="cn">中文</button>
+                        <button data-lang="en">English</button>
+                    </div>
+                    <div class="video-container">
+                        <!-- 视频将通过JS动态加载 -->
+                    </div>
+                </div>
+                
+                <div class="netease-music">
+                    <a href="https://music.163.com/user/home?id=1528673690" target="_blank" class="music-link">
+                        <img src="./icons/netease-music.svg" alt="网易云音乐">
+                        <span>查看音乐作品集</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SEO优化隐藏文本 -->
+        <div class="seo-text" aria-hidden="true">
+            <p>CBAM技术服务 | LCA碳足迹分析 | 企业EHS体系建设 | ISO14064认证专家</p>
+            <p>GB/T 32150-2015</p>
+        </div>
+    </section>
+
+    <!-- 底部栏 -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 CHEN的个人网站</p>
+            <a href="#" class="privacy-policy">隐私政策</a>
+            <button id="back-to-top" class="back-to-top">↑</button>
+        </div>
+    </footer>
+
+    <!-- AI聊天按钮 -->
+    <button id="chat-toggle" class="chat-toggle" type="button">
+        <span class="chat-icon">💬</span>
+    </button>
+
+    <!-- AI聊天窗口 -->
+    <div id="chat-container" class="chat-container hidden">
+        <div class="chat-header">
+            <h3>智能助手</h3>
+            <button class="close-chat">×</button>
+        </div>
+        <div class="chat-messages"></div>
+        <div class="chat-input-area">
+            <textarea placeholder="输入消息..." class="chat-input"></textarea>
+            <button class="send-message">发送</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

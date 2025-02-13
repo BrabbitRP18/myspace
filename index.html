@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4的理想国 | Hip-Hop Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">A4的理想国</div>
+            <div class="nav-links">
+                <a href="index.html">主页</a>
+                <a href="about.html">关于</a>
+                <a href="journal.html">日志</a>
+                <div class="contact-dropdown">
+                    <a href="#" class="contact-trigger">Contact</a>
+                    <div class="contact-dropdown-content">
+                        <div class="contact-item">
+                            <img src="./icons/wechat.svg" alt="WeChat">
+                            <div class="contact-text">
+                                <h4>WeChat</h4>
+                                <p>OSBBQA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <img src="./icons/phone.svg" alt="Phone">
+                            <div class="contact-text">
+                                <h4>Tel</h4>
+                                <p>15897675306</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <img src="./icons/email.svg" alt="Email">
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>2096014021@qq.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="portfolio.html">作品集</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页轮播图 -->
+    <section id="home" class="hero-slider">
+        <div class="welcome-text">
+            <h1>欢迎来到A4的理想国</h1>
+            <div class="divider">——</div>
+        </div>
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('./images/slide1.jpg')">
+                <div class="overlay"></div>
+                <div class="slide-content">
+                    <h2>「STREET × STYLE」</h2>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('./images/slide2.jpg')">
+                <div class="overlay"></div>
+                <div class="slide-content">
+                    <h2>「Breaking Rules, Making Art」</h2>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('./images/slide3.jpg')">
+                <div class="overlay"></div>
+                <div class="slide-content">
+                    <h2>「From Streets to Screens」</h2>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- 简介区域 -->
+    <section id="about" class="intro-section">
+        <div class="avatar">
+            <img src="./images/网易音乐人.jpg" alt="喜欢穿模的A4">
+        </div>
+        <h2>喜欢穿模的A4</h2>
+        <p> HIPHOP/混音制作/摄影</p>
+        <div class="intro-details">
+            <p class="school">云南大学</p>
+            <p class="email">2096014021@qq.com</p>
+        </div>
+    </section>
+
+    <!-- 相册预览区域 -->
+    <section id="gallery-preview" class="gallery-preview-section">
+        <h2>相册</h2>
+        <div class="divider">——</div>
+        <p class="section-desc">记录生活中的每一个精彩瞬间</p>
+        <div class="gallery-preview-slider">
+            <div class="gallery-preview-slides">
+                <div class="gallery-preview-slide active">
+                    <img src="./images/gallery/1.jpg" alt="相册图片1">
+                    <div class="slide-info">
+                        <p>2024.03.20</p>
+                    </div>
+                </div>
+                <div class="gallery-preview-slide">
+                    <img src="./images/gallery/2.jpg" alt="相册图片2">
+                    <div class="slide-info">
+                        <p>2024.03.15</p>
+                    </div>
+                </div>
+                <div class="gallery-preview-slide">
+                    <img src="./images/gallery/3.jpg" alt="相册图片3">
+                    <div class="slide-info">
+                        <p>2024.03.10</p>
+                    </div>
+                </div>
+                <div class="gallery-preview-slide">
+                    <img src="./images/gallery/4.jpg" alt="相册图片4">
+                    <div class="slide-info">
+                        <p>2024.03.05</p>
+                    </div>
+                </div>
+                <div class="gallery-preview-slide">
+                    <img src="./images/gallery/5.jpg" alt="相册图片5">
+                    <div class="slide-info">
+                        <p>2024.02.28</p>
+                    </div>
+                </div>
+                <div class="gallery-preview-slide">
+                    <img src="./images/gallery/6.jpg" alt="相册图片6">
+                    <div class="slide-info">
+                        <p>2024.02.20</p>
+                    </div>
+                </div>
+            </div>
+            <button class="gallery-preview-prev">❮</button>
+            <button class="gallery-preview-next">❯</button>
+            <div class="gallery-preview-dots"></div>
+        </div>
+        <div class="view-more-container">
+            <a href="gallery.html" class="view-more-btn">查看更多</a>
+        </div>
+    </section>
+
+    <!-- 底部栏 -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 A4的理想国 | Stay Real</p>
+            <a href="#" class="privacy-policy">隐私政策</a>
+            <button id="back-to-top" class="back-to-top">↑</button>
+        </div>
+    </footer>
+
+    <!-- AI聊天按钮 -->
+    <button id="chat-toggle" class="chat-toggle" type="button">
+        <span class="chat-icon">💬</span>
+    </button>
+
+    <!-- AI聊天窗口 -->
+    <div id="chat-container" class="chat-container hidden">
+        <div class="chat-header">
+            <h3>A4的小跟班</h3>
+            <button class="close-chat">×</button>
+        </div>
+        <div class="chat-messages"></div>
+        <div class="chat-input-area">
+            <textarea placeholder="输入消息..." class="chat-input"></textarea>
+            <button class="send-message">发送</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

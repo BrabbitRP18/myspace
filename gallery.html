@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相册 | 喜欢穿模的A4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">喜欢穿模的A4</div>
+            <div class="nav-links">
+                <a href="index.html">主页</a>
+                <a href="journal.html">日志</a>
+                <a href="gallery.html">相册</a>
+                <a href="portfolio.html">作品集</a>
+                <a href="contact.html">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 相册页面 -->
+    <section class="gallery-page">
+        <h1>GALLERY</h1>
+        <div class="divider">——</div>
+        <div class="gallery-slider">
+            <div class="gallery-slides">
+                <div class="gallery-slide active">
+                    <img src="./images/gallery/1.jpg" alt="相册图片1">
+                    <div class="slide-info">
+                        <p>2024.03.20</p>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="./images/gallery/2.jpg" alt="相册图片2">
+                    <div class="slide-info">
+                        <p>2024.03.15</p>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="./images/gallery/3.jpg" alt="相册图片3">
+                    <div class="slide-info">
+                        <p>2024.03.10</p>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="./images/gallery/4.jpg" alt="相册图片4">
+                    <div class="slide-info">
+                        <p>2024.03.05</p>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="./images/gallery/5.jpg" alt="相册图片5">
+                    <div class="slide-info">
+                        <p>2024.02.28</p>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <img src="./images/gallery/6.jpg" alt="相册图片6">
+                    <div class="slide-info">
+                        <p>2024.02.20</p>
+                    </div>
+                </div>
+            </div>
+            <button class="gallery-prev">❮</button>
+            <button class="gallery-next">❯</button>
+            <div class="gallery-dots"></div>
+        </div>
+    </section>
+
+    <!-- 图片预览模态框 -->
+    <div class="modal" id="imageModal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption"></div>
+        <button class="modal-prev">&#10094;</button>
+        <button class="modal-next">&#10095;</button>
+    </div>
+
+    <!-- 底部栏 -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 喜欢穿模的A4 | Stay Real</p>
+            <div class="footer-links">
+                <a href="#" class="privacy-policy">隐私政策</a>
+                <span class="divider">|</span>
+                <a href="mailto:contact@example.com">联系我们</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html> 
